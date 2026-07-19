@@ -26,7 +26,7 @@ header {
     height:72px;
 }
 
-.container {
+.header-bar {
     width:90%;
     margin:auto;
     display:flex;
@@ -50,7 +50,7 @@ nav a {
     height: 36px;
     border: none;
     border-radius: 999px;
-    background: #ddd;
+    background: #444; /* #ddd */
     position: relative;
     cursor: pointer;
     transition: background 0.4s ease;
@@ -62,7 +62,7 @@ nav a {
     top: 4px;
     width: 28px;
     height: 28px;
-    background: white;
+    background: #121212; /* white */
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -82,35 +82,75 @@ body.dark .dark-mode .icon {
     background: #121212;
 }
 
-.collective {
+.info {
     width:95%;
     margin:40px auto;
     display:grid;
-    grid-template-columns:1fr 2fr;
+    grid-template-columns:2fr 2fr;
     background:#111;
     color:white;
     border:1px solid #333;
 }
 
-.collective-left {
+.info-left {
     padding:50px;
     border-right:1px solid #333;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+    display:grid;
 }
 
-.collective-left h2 {
-    color:#f3a4aa;
-    font-size:38px;
+.left-top {
+    display: flex;
+    height: 250px;
 }
 
-.collective-right {
+.info-left img {
+    width: 170px;
+    height: 170px;
+}
+
+.details {
+    padding-left: 30px;
+}
+
+.left-top h2 {
+    color:#7ab983;
+    font-size:30px;
+    margin-bottom: 5px;
+}
+
+.left-top ul {
+    font-size: 20px;
+    color: rgb(54, 107, 76);
+    padding-left: 30px;
+    line-height: 1.5;
+}
+
+.left-bottom h3 {
+    font-size: 25px;
+    margin-bottom:20px;
+}
+
+.left-bottom ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.second-list {
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.second-list li {
+    list-style:circle;
+}
+
+.info-right {
     padding:50px;
 }
 
-.collective-right p {
+.info-right p {
     line-height:1.8;
+    text-align: justify;
 }
 
 .cards {
@@ -123,6 +163,8 @@ body.dark .dark-mode .icon {
 .info-card {
     border:1px solid #333;
     padding:25px;
+    display:flex;
+    gap: 70px;
 }
 
 .info-card h3 {
