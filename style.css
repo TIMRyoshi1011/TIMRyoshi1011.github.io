@@ -118,14 +118,12 @@ body.dark .info {
 }
 
 .left-top h2 {
-    /* color:#7ab983; */
     font-size:30px;
     margin-bottom: 5px;
 }
 
 .left-top ul {
     font-size: 20px;
-    /* color: rgb(54, 107, 76); */
     padding-left: 30px;
     line-height: 1.5;
 }
@@ -195,7 +193,6 @@ body.dark .info {
     margin-bottom:40px;
     padding-bottom:20px;
     border-bottom:1px solid #ddd;
-    /* color:white;  Remove this */
 }
 
 .projects {
